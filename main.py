@@ -9,19 +9,24 @@ t.color("blue")
 
 
 # Draw a square
-
-# for i in range(4):
-#     t.forward(100)
-#     t.right(90)
+t.penup()
+t.goto(-300,-200)
+t.pendown()
+for i in range(4):
+    t.forward(100)
+    t.right(90)
 
 # Draw a dashed line
-# for _ in range(10):
-#     t.forward(10)
-#     t.penup()
-#     t.forward(10)
-#     t.pendown()
+t.penup()
+t.goto(-150,-200)
+t.pendown()
+for _ in range(10):
+    t.forward(10)
+    t.penup()
+    t.forward(10)
+    t.pendown()
 
-# Draw triangle, square, upto 10 sides with each random color
+ # Draw triangle, square, upto 10 sides with each random color
 
 # c = ["red", "yellow", "blue", "green", "black", "pink", "orange", "gray", "purple"]
 # c = ["red", "orange", "yellow", "green", "blue", "purple", "pink", "white"]
