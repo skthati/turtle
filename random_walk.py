@@ -8,11 +8,6 @@ ts = Screen()
 t.shape("turtle")
 t.color("blue")
 
-# print(random.randint(0,3))
-#
-# t.backward(100)
-# t.left(100)
-
 def forward():
     return t.forward(20)
 
@@ -48,7 +43,7 @@ ts.colormode(255)
 lst1 = [forward, right, left, back]
 t.pensize(10)
 
-for _ in range(100):
+for _ in range(50):
     t.forward(20)
     tup = random_color()
     t.color(tup)
