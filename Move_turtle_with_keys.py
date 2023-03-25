@@ -3,10 +3,16 @@ import random
 from turtle import Turtle, Screen
 
 t = Turtle()
-s = Turtle()
-a = Turtle()
-n = Turtle()
-d = Turtle()
+w = Turtle()
+
+w.penup()
+w.goto(0, 200)
+w.pendown()
+w.color("blue")
+w.pensize(2)
+w.hideturtle()
+w.write("Hello", align="center", font=("Arial", 24, "normal"))
+
 
 ts = Screen()
 ts.colormode(255)
@@ -16,26 +22,6 @@ ts.setup(700, 700)
 t.shape("turtle")
 t.color("blue")
 t.pensize(5)
-
-''' s turtle'''
-s.shape("turtle")
-s.color("red")
-s.pensize(5)
-
-''' a turtle'''
-a.shape("turtle")
-a.color("red")
-a.pensize(5)
-
-''' n turtle'''
-n.shape("turtle")
-n.color("red")
-n.pensize(5)
-
-''' d turtle'''
-d.shape("turtle")
-d.color("red")
-d.pensize(5)
 
 
 def random_color():
@@ -50,24 +36,33 @@ def move_forward():
     tup = random_color()
     t.color(tup)
     t.forward(20)
+    w.clear()
+    w.write("Forward 20", align="center", font=("Arial", 24, "normal"))
+
 
 
 def right_move():
     tup = random_color()
     t.color(tup)
     t.right(90)
+    w.clear()
+    w.write("Right 90", align="center", font=("Arial", 24, "normal"))
 
 
 def left_move():
     tup = random_color()
     t.color(tup)
     t.left(90)
+    w.clear()
+    w.write("Left 90", align="center", font=("Arial", 24, "normal"))
 
 
 def move_backward():
     tup = random_color()
     t.color(tup)
     t.backward(20)
+    w.clear()
+    w.write("Backward 20", align="center", font=("Arial", 24, "normal"))
 
 
 def go_home():
@@ -75,9 +70,6 @@ def go_home():
     t.penup()
     t.home()
     t.pendown()
-
-
-t.goto(-300, -300)
 
 ts.listen()
 ts.onkey(key="Up", fun=move_forward)

@@ -213,6 +213,28 @@ My son likes Avatar, So added background pic.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  
 
+<!-- Move Turtle using keys -->
+## Move turtle with keys <a name="move_turtle_with_keys"></a>
+Move Turtle using up, down, left, right keys.
+Change Turtle color on every move.
+
+[Code File Location](Move_turtle_with_keys.py)
+
+code
+```Python
+ts.listen()
+ts.onkey(key="Up", fun=move_forward)
+ts.onkey(key="Right", fun=right_move)
+ts.onkey(key="Left", fun=left_move)
+ts.onkey(key="Down", fun=move_backward)
+ts.onkey(key="space", fun=go_home)
+```
+Output
+![Alt text](move_turtle_with_keys.gif)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>  
+
 <!-- abc 
 
 Test1 
