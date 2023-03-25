@@ -61,7 +61,6 @@ while x < 230:
         players_lst[i].forward(random_speed())
         a, b = players_lst[i].position()
         if a >= 230:
-
             print(f"{players_lst[i]} Won the race!")
             break
 

@@ -170,6 +170,49 @@ Output
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>
 
+<!-- Turtles Race -->
+## Turtles Race <a name="turtles-race"></a>
+Simple Turtles race.
+* Turtles with random color.
+* Race stops when the turtle touches the finish line.
+
+Create turtle instance, assign random color and position.
+```Python
+for i in range(4):
+    players_lst[i] = Turtle()
+    t = players_lst[i]
+    t.penup()
+    t.color(random_color())
+    t.shape("turtle")
+    t.goto(-250, (-100+j))
+    j += 50
+```
+
+Race turtles and declare winner.
+
+```Python
+while x < 230:
+    for i in range(4):
+        x, x1 = players_lst[i].position()
+        players_lst[i].forward(random_speed())
+        a, b = players_lst[i].position()
+        if a >= 230:
+            print(f"{players_lst[i]} Won the race!")
+            break
+```
+
+Output
+![Alt text](turtle_race.gif)
+
+[Code file location](turtle_race_final.py)
+
+My son likes Avatar, So added background pic.
+
+![Alt text](turtle_race_avatar.gif)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>  
+
 <!-- abc 
 
 Test1 
