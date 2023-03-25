@@ -33,6 +33,7 @@ ts.exitonclick()
 ```
 
 Output
+
 ![Alt text](turtle.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -53,6 +54,7 @@ for _ in range(10):
     t.pendown()
 ```
 Output
+
 ![Alt text](dot_line.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -96,6 +98,7 @@ while sides < 10:
     sides += 1
 ```
 Output
+
 ![Alt text](side_increment.gif)
 
 
@@ -166,6 +169,7 @@ for _ in range(50):
 ```
 
 Output
+
 ![Alt text](random_walk.gif)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>
@@ -202,6 +206,7 @@ while x < 230:
 ```
 
 Output
+
 ![Alt text](turtle_race.gif)
 
 [Code file location](turtle_race_final.py)
@@ -230,6 +235,7 @@ ts.onkey(key="Down", fun=move_backward)
 ts.onkey(key="space", fun=go_home)
 ```
 Output
+
 ![Alt text](move_turtle_with_keys.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
